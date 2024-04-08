@@ -43,9 +43,9 @@ class _BookingPageState extends State<BookingPage> {
     Config().init(context);
     final doctor = ModalRoute.of(context)!.settings.arguments as Map;
     return Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         appTitle: 'Appointment',
-        icon: const FaIcon(Icons.arrow_back_ios),
+        icon: FaIcon(Icons.arrow_back_ios),
       ),
       body: CustomScrollView(
         slivers: <Widget>[

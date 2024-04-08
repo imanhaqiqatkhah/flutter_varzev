@@ -63,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Center(
               child: Card(
                 margin: const EdgeInsets.fromLTRB(0, 45, 0, 0),
-                child: Container(
+                child: SizedBox(
                   width: 300,
                   height: 250,
                   child: Padding(
