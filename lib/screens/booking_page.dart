@@ -10,7 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class BookingPage extends StatefulWidget {
-  BookingPage({Key? key}) : super(key: key);
+  const BookingPage({super.key});
 
   @override
   State<BookingPage> createState() => _BookingPageState();

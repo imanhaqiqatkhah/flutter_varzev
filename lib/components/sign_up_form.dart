@@ -8,7 +8,7 @@ import 'package:provider/provider.dart';
 import '../utils/config.dart';
 
 class SignUpForm extends StatefulWidget {
-  SignUpForm({Key? key}) : super(key: key);
+  const SignUpForm({super.key});
 
   @override
   State<SignUpForm> createState() => _SignUpFormState();

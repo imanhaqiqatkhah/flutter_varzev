@@ -6,8 +6,7 @@ import 'package:rating_dialog/rating_dialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppointmentCard extends StatefulWidget {
-  AppointmentCard({Key? key, required this.doctor, required this.color})
-      : super(key: key);
+  const AppointmentCard({super.key, required this.doctor, required this.color});
 
   final Map<String, dynamic> doctor;
   final Color color;
@@ -158,7 +157,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
 
 //Schedule Widget
 class ScheduleCard extends StatelessWidget {
-  const ScheduleCard({Key? key, required this.appointment}) : super(key: key);
+  const ScheduleCard({super.key, required this.appointment});
   final Map<String, dynamic> appointment;
 
   @override

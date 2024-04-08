@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import '../utils/config.dart';
 
 class AuthPage extends StatefulWidget {
-  const AuthPage({Key? key}) : super(key: key);
+  const AuthPage({super.key});
 
   @override
   State<AuthPage> createState() => _AuthPageState();
@@ -48,7 +48,7 @@ class _AuthPageState extends State<AuthPage> {
               ),
             ),
             Config.spaceSmall,
-            isSignIn ? LoginForm() : SignUpForm(),
+            isSignIn ? const LoginForm() : SignUpForm(),
             Config.spaceSmall,
             isSignIn
                 ? Center(
@@ -77,9 +77,9 @@ class _AuthPageState extends State<AuthPage> {
               ),
             ),
             Config.spaceSmall,
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const <Widget>[
+              children: <Widget>[
                 SocialButton(social: 'google'),
                 SocialButton(social: 'facebook'),
               ],

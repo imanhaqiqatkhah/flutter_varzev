@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
 class AppointmentPage extends StatefulWidget {
-  const AppointmentPage({Key? key}) : super(key: key);
+  const AppointmentPage({super.key});
 
   @override
   State<AppointmentPage> createState() => _AppointmentPageState();
@@ -245,8 +245,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
 
 class ScheduleCard extends StatelessWidget {
   const ScheduleCard(
-      {Key? key, required this.date, required this.day, required this.time})
-      : super(key: key);
+      {super.key, required this.date, required this.day, required this.time});
   final String date;
   final String day;
   final String time;

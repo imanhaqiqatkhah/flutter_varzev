@@ -5,7 +5,7 @@ import "package:provider/provider.dart";
 import "../models/auth_model.dart";
 
 class FavPage extends StatefulWidget {
-  FavPage({Key? key}) : super(key: key);
+  const FavPage({super.key});
 
   @override
   State<FavPage> createState() => _FavPageState();

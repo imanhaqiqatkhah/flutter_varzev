@@ -9,8 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../components//custom_appbar.dart';
 
 class DoctorDetails extends StatefulWidget {
-  const DoctorDetails({Key? key, required this.doctor, required this.isFav})
-      : super(key: key);
+  const DoctorDetails({super.key, required this.doctor, required this.isFav});
   final Map<String, dynamic> doctor;
   final bool isFav;
 
@@ -108,7 +107,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
 }
 
 class AboutDoctor extends StatelessWidget {
-  const AboutDoctor({Key? key, required this.doctor}) : super(key: key);
+  const AboutDoctor({super.key, required this.doctor});
 
   final Map<dynamic, dynamic> doctor;
 
@@ -169,7 +168,7 @@ class AboutDoctor extends StatelessWidget {
 }
 
 class DetailBody extends StatelessWidget {
-  const DetailBody({Key? key, required this.doctor}) : super(key: key);
+  const DetailBody({super.key, required this.doctor});
   final Map<dynamic, dynamic> doctor;
 
   @override
@@ -207,8 +206,7 @@ class DetailBody extends StatelessWidget {
 }
 
 class DoctorInfo extends StatelessWidget {
-  const DoctorInfo({Key? key, required this.patients, required this.exp})
-      : super(key: key);
+  const DoctorInfo({super.key, required this.patients, required this.exp});
 
   final int patients;
   final int exp;
@@ -241,8 +239,7 @@ class DoctorInfo extends StatelessWidget {
 }
 
 class InfoCard extends StatelessWidget {
-  const InfoCard({Key? key, required this.label, required this.value})
-      : super(key: key);
+  const InfoCard({super.key, required this.label, required this.value});
 
   final String label;
   final String value;

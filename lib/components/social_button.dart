@@ -2,7 +2,7 @@ import 'package:flutter_varzev/utils/config.dart';
 import 'package:flutter/material.dart';
 
 class SocialButton extends StatelessWidget {
-  const SocialButton({Key? key, required this.social}) : super(key: key);
+  const SocialButton({super.key, required this.social});
 
   final String social;
 

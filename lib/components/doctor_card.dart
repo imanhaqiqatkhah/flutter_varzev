@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 
 class DoctorCard extends StatelessWidget {
   const DoctorCard({
-    Key? key,
+    super.key,
     required this.doctor,
     required this.isFav,
-  }) : super(key: key);
+  });
 
   final Map<String, dynamic> doctor;
   final bool isFav;
@@ -54,9 +54,9 @@ class DoctorCard extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: const <Widget>[
+                        children: <Widget>[
                           Icon(
                             Icons.star_border,
                             color: Colors.yellow,
