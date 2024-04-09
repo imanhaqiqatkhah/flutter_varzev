@@ -32,11 +32,11 @@ class _SignUpFormState extends State<SignUpForm> {
             keyboardType: TextInputType.text,
             cursorColor: Config.primaryColor,
             decoration: const InputDecoration(
-              hintText: 'Username',
-              labelText: 'Username',
+              hintText: 'نام کاربری',
+              hintTextDirection: TextDirection.rtl,
               alignLabelWithHint: true,
-              prefixIcon: Icon(Icons.person_outlined),
-              prefixIconColor: Config.primaryColor,
+              suffixIcon: Icon(Icons.person_outlined),
+              suffixIconColor: Config.primaryColor,
             ),
           ),
           Config.spaceSmall,
@@ -45,11 +45,11 @@ class _SignUpFormState extends State<SignUpForm> {
             keyboardType: TextInputType.emailAddress,
             cursorColor: Config.primaryColor,
             decoration: const InputDecoration(
-              hintText: 'Email Address',
-              labelText: 'Email',
+              hintText: 'آدرس ایمیل',
+              hintTextDirection: TextDirection.rtl,
               alignLabelWithHint: true,
-              prefixIcon: Icon(Icons.email_outlined),
-              prefixIconColor: Config.primaryColor,
+              suffixIcon: Icon(Icons.email_outlined),
+              suffixIconColor: Config.primaryColor,
             ),
           ),
           Config.spaceSmall,
@@ -59,12 +59,12 @@ class _SignUpFormState extends State<SignUpForm> {
             cursorColor: Config.primaryColor,
             obscureText: obsecurePass,
             decoration: InputDecoration(
-                hintText: 'Password',
-                labelText: 'Password',
+                hintText: 'پسورد',
+                hintTextDirection: TextDirection.rtl,
                 alignLabelWithHint: true,
-                prefixIcon: const Icon(Icons.lock_outline),
-                prefixIconColor: Config.primaryColor,
-                suffixIcon: IconButton(
+                suffixIcon: const Icon(Icons.lock_outline),
+                suffixIconColor: Config.primaryColor,
+                prefixIcon: IconButton(
                     onPressed: () {
                       setState(() {
                         obsecurePass = !obsecurePass;
@@ -85,7 +85,7 @@ class _SignUpFormState extends State<SignUpForm> {
             builder: (context, auth, child) {
               return Button(
                 width: double.infinity,
-                title: 'Sign Up',
+                title: 'ثبت نام',
                 onPressed: () async {
                   final userRegistration = await DioProvider().registerUser(
                       _nameController.text,

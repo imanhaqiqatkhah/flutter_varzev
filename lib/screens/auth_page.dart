@@ -27,13 +27,13 @@ class _AuthPageState extends State<AuthPage> {
       ),
       child: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
               AppText.enText['welcome_text']!,
               style: const TextStyle(
-                fontSize: 36,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -86,6 +86,7 @@ class _AuthPageState extends State<AuthPage> {
             ),
             Config.spaceSmall,
             Row(
+              textDirection: TextDirection.rtl,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
@@ -105,7 +106,7 @@ class _AuthPageState extends State<AuthPage> {
                     });
                   },
                   child: Text(
-                    isSignIn ? 'Sign Up' : 'Sign In',
+                    isSignIn ? 'ثبت نام' : 'ورود',
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

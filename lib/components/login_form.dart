@@ -34,11 +34,11 @@ class _LoginFormState extends State<LoginForm> {
             keyboardType: TextInputType.emailAddress,
             cursorColor: Config.primaryColor,
             decoration: const InputDecoration(
-              hintText: 'Email Address',
-              labelText: 'Email',
+              hintText: 'آدرس ایمیل',
+              hintTextDirection: TextDirection.rtl,
               alignLabelWithHint: true,
-              prefixIcon: Icon(Icons.email_outlined),
-              prefixIconColor: Config.primaryColor,
+              suffixIcon: Icon(Icons.email_outlined),
+              suffixIconColor: Config.primaryColor,
             ),
           ),
           Config.spaceSmall,
@@ -48,12 +48,12 @@ class _LoginFormState extends State<LoginForm> {
             cursorColor: Config.primaryColor,
             obscureText: obsecurePass,
             decoration: InputDecoration(
-                hintText: 'Password',
-                labelText: 'Password',
+                hintText: 'پسورد',
+                hintTextDirection: TextDirection.rtl,
                 alignLabelWithHint: true,
-                prefixIcon: const Icon(Icons.lock_outline),
-                prefixIconColor: Config.primaryColor,
-                suffixIcon: IconButton(
+                suffixIcon: const Icon(Icons.lock_outline),
+                suffixIconColor: Config.primaryColor,
+                prefixIcon: IconButton(
                     onPressed: () {
                       setState(() {
                         obsecurePass = !obsecurePass;
@@ -74,7 +74,7 @@ class _LoginFormState extends State<LoginForm> {
             builder: (context, auth, child) {
               return Button(
                 width: double.infinity,
-                title: 'Sign In',
+                title: 'ورود',
                 onPressed: () async {
                   //login here
                   final token = await DioProvider()
